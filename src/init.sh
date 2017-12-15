@@ -3,6 +3,9 @@
 # generate vertcoin.conf
 ## TODO -> Change /root/.vertcoin/vertcoin.conf to /config/vertcoin.conf
 
+# create directory
+mkdir /root/.vertcoin
+
 cat <<EOF > /root/.vertcoin/vertcoin.conf
   server=1
   rpcuser=$RPC_USER
