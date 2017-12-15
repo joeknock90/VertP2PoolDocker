@@ -10,7 +10,8 @@ RUN apt update && apt install -y \
 ADD src/init.sh /init.sh
 
 # download python source files
-RUN git clone https://github.com/vertcoin/p2pool-vtc.git && \
+RUN chmod +x /init.sh && \
+    git clone https://github.com/vertcoin/p2pool-vtc.git && \
     cd p2pool-vtc/ && \
     pip install -r requirements.txt && \
     cd lyra2re-hash-python && \
