@@ -58,7 +58,7 @@ I'm sure that there is a lot I am missing here so make some pull requests and pu
 This is my first ever docker container and I've only just started using Vertcoin but I love the community!
 
 # Donate?
-If you are feeling fancy, show me some support!
+If you are feeling fancy, show me some support! Always appreciated, never required.
 
 VTC: Vxi1ZRH74dUzJ31djx1Bu48rmfXmKNHzck
 
