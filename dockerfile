@@ -33,4 +33,4 @@ ENV FEE_ADDRESS VnfNKCy5Aq7vZq5W9UKgMwfDLT7NrPRWZK
 # expose mining port
 EXPOSE 9171 9346
 
-ENTRYPOINT ["init.sh"]
+ENTRYPOINT ["/init.sh"]
