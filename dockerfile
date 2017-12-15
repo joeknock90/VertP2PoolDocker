@@ -14,6 +14,7 @@ RUN git clone https://github.com/vertcoin/p2pool-vtc.git && \
     cd p2pool-vtc/ && \
     pip install -r requirements.txt && \
     cd lyra2re-hash-python && \
+    git submodule init && git submodule update && \
     python setup.py install
 
 # create configuration volume
