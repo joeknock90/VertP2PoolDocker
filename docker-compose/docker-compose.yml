@@ -9,7 +9,7 @@ networks:
 services:
 
   vertcoind:
-    image: lukeschild/vertcoind:latest
+    image: lukechilds/vertcoind:latest
     env_file:
       - .env
     networks:
