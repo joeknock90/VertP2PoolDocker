@@ -18,7 +18,8 @@ services:
           - vertcoind
     ports:
       - '5889:5889'
-      - '5888:5888'
+    expose:
+      - '5888'
     volumes:
       - vertcoind-data:/data
     command: -rpcuser=$RPC_USER -rpcpassword=$RPC_PASSWORD
