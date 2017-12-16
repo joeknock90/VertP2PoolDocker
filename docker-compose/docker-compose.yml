@@ -1,0 +1,42 @@
+version: '3'
+
+volumes:
+  vertcoind-data:
+
+networks:
+  backend:
+
+services:
+
+  vertcoind:
+    image: lukechilds/vertcoind:latest
+    env_file:
+      - .env
+    networks:
+      backend:
+        aliases:
+          - vertcoind
+    ports:
+      - '5889:5889'
+      - '5888:5888'
+    volumes:
+      - vertcoind-data:/data
+    command: -rpcuser=$RPC_USER -rpcpassword=$RPC_PASSWORD
+
+  p2pool:
+    image: joeknock90/p2pool-vtc
+    env_file:
+      - .env
+    networks:
+      backend:
+        aliases:
+          - p2pool
+    environment:
+      RPC_USER: $RPC_USER
+      RPC_PASSWORD: $RPC_PASSWORD
+      VERTCOIND_HOST: vertcoind
+      VERTCOIND_HOST_PORT: '5888'
+      FEE: $FEE
+      MAX_CONNECTIONS: $MAX_CONNECTIONS
+      FEE_ADDRESS: $FEE_ADDRESS
+      NET: vertcoin2

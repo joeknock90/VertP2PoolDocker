@@ -57,9 +57,14 @@ I'm sure that there is a lot I am missing here so make some pull requests and pu
 
 This is my first ever docker container and I've only just started using Vertcoin but I love the community!
 
+# Licence 
+MIT 
+
 # Donate?
 If you are feeling fancy, show me some support! Always appreciated, never required.
 
 VTC: Vxi1ZRH74dUzJ31djx1Bu48rmfXmKNHzck
 
 ETH: 0xCBf45d1Ac796012Ea096D26d796aD5d1E16817c1
+
+DOGE: DBVGr1SiwSJbJSjG4eMgAZ6PfSTpwXfSPF
