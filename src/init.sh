@@ -4,7 +4,6 @@
 ## TODO -> Change /root/.vertcoin/vertcoin.conf to /config/vertcoin.conf
 
 # create directory if it doesn't exist
-
 if [ ! -d /root/.vertcoin ]; then
   mkdir /root/.vertcoin
 fi
