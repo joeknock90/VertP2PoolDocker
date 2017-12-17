@@ -3,9 +3,12 @@
 # generate vertcoin.conf
 ## TODO -> Change /root/.vertcoin/vertcoin.conf to /config/vertcoin.conf
 
-# create directory
-mkdir /root/.vertcoin
+# create directory if it doesn't exist
+if [ ! -d /root/.vertcoin ]; then
+  mkdir /root/.vertcoin
+fi
 
+# create the file whether it exists or not
 cat <<EOF > /root/.vertcoin/vertcoin.conf
   server=1
   rpcuser=$RPC_USER
