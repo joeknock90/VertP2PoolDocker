@@ -24,13 +24,16 @@ I prefer to use docker-compose. The compose file included in the repository will
 docker-compose up -d
 ```
 
+
 To monitor the container spinning up run:
 
 ```
 docker-compose logs -f
 ```
 
+
 If you want to run the container manually, the following will get you going without docker-compose:
+
 
 ```
 docker run -d --name p2pool-vtc \
