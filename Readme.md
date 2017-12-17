@@ -18,6 +18,20 @@ Made by that brilliant man over there.
 
 After that is installed. You'll run the container:
 
+I prefer to use docker-compose. The compose file included in the repository will run both vertcoind and p2pool automagically. All you have to do is set the environment variables in the .env file located in the same folder. While in the directory containing the docker compose file, just run:
+
+```
+docker-compose up -d
+```
+
+To monitor the container spinning up run:
+
+```
+docker-compose logs -f
+```
+
+If you want to run the container manually, the following will get you going without docker-compose:
+
 ```
 docker run -d --name p2pool-vtc \
   -p 9171:9171
@@ -29,7 +43,8 @@ docker run -d --name p2pool-vtc \
   joeknock90/p2pool-vtc:latest
 ```
 
-That will get you going with the most basic settings
+If you have only just run vertcoind, it can take a while to start working, especially if you have to download the blocks from the blockchain. It will also take a while to load the block index when restarting the vertcoind container.
+
 
 ## Environment Variables
 You can set these environment variables. Defaults are listed here:
@@ -57,8 +72,8 @@ I'm sure that there is a lot I am missing here so make some pull requests and pu
 
 This is my first ever docker container and I've only just started using Vertcoin but I love the community!
 
-# Licence 
-MIT 
+# Licence
+MIT
 
 # Donate?
 If you are feeling fancy, show me some support! Always appreciated, never required.
