@@ -32,7 +32,7 @@ services:
       backend:
         aliases:
           - p2pool
-    port:
+    ports:
       - '9171:9171'
     environment:
       RPC_USER: $RPC_USER
